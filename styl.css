@@ -1,0 +1,203 @@
+/* Your existing CSS styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rockwell', sans-serif;
+    background: url('calming.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #05fcf0, #e1c4fa), url('wo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(240, 240, 240, 0.9);
+    margin: 80px auto 40px;
+    padding: 40px 30px 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-heading h1 {
+    color: darkviolet;
+    font-size: 3em;
+}
+
+h5 {
+    color: rgb(226, 53, 56);
+    font-size: 1.2em;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #96c5f7;
+    border-radius: 20px;
+    border-color: aquamarine;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+button {
+    border-color: #05fcf0;
+    outline: none;
+    padding: 12px 20px;
+    background: rgb(215, 209, 23);
+    color: #333;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 90px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin: 0 10px;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 90px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.column h3 {
+    color: indigo;
+    font-size: 1.5em;
+}
+
+.task-list {
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.4em;
+    padding: 15px 10px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 15px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url('unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 15px;
+    left: 6px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url('checked.png');
+}
+
+ul li span {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    font-size: 1.6em;
+    color: #fff;
+    background: #3659f4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+ul li span:hover {
+    background: rgb(240, 12, 73);
+}
+
+/* Additional styles for the About and Creator buttons */
+
+.buttons button:nth-child(1) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buttons button:nth-child(2) {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Add any additional styling you want for the buttons, such as margin, padding, etc. */
+.buttons button {
+    margin: 0 10px;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 90px;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Add hover effect for the buttons */
+.buttons button:hover {
+    background-color: #45a049; /* Darker green color for 'About' button */
+}
+
+.buttons button:nth-child(2):hover {
+    background-color: #1976D2; /* Darker blue color for 'Creator' button */
+}
